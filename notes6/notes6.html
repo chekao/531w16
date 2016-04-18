@@ -103,7 +103,7 @@ img {
 \\ 
 {\Psi}(x)&amp;=&amp;1+{\Psi}_1 x+\dots +{\Psi}_qx^Q.
 \end{eqnarray}\]</span></p></li>
-<li><p>We see that a SARMA model is a special case of an ARMA model, where the AR and MA polynomials are factored into a <strong>monthly</strong> polynomial in <span class="math">\(B\)</span> and an <strong>annual</strong> polynomial in <span class="math">\(B^{12}\)</span>.</p></li>
+<li><p>We see that a SARMA model is a special case of an ARMA model, where the AR and MA polynomials are factored into a <strong>monthly</strong> polynomial in <span class="math">\(B\)</span> and an <strong>annual</strong> polynomial in <span class="math">\(B^{12}\)</span>. The annual polynomial is also called the <strong>seasonal</strong> polynomial.</p></li>
 <li><p>Thus, everything we learned about ARMA models (including assessing causality, invertibility and reducibility) also applies to SARMA.</p></li>
 <li><p>One could write a SARMA model for some <strong>period</strong> other than 12. For example, a SARMA<span class="math">\((p,q)\times(P,Q)_{4}\)</span> model could be appropriate for quarterly data. In principle, a SARMA<span class="math">\((p,q)\times(P,Q)_{52}\)</span> model could be appropriate for weekly data, though in practice ARMA and SARMA may not work so well for higher frequency data.</p></li>
 <li><p>Consider the following two models: <br> <br> [S2] <span class="math">\({\quad\quad\quad}X_n = 0.5 X_{n-1} + 0.25 X_{n-12} + \epsilon_n\)</span>, <br> <br> [S3] <span class="math">\({\quad\quad\quad}X_n = 0.5 X_{n-1} + 0.25 X_{n-12} - 0.125 X_{n-13} + \epsilon_n\)</span>, <br> <br></p></li>
@@ -255,7 +255,7 @@ huron_sarma11x10</code></pre>
 <div id="the-sarimapdqtimespdq-model" class="section level2">
 <h2><span class="header-section-number">6.3</span> The SARIMA<span class="math">\((p,d,q)\times(P,D,Q)\)</span> model</h2>
 <ul>
-<li><p>Combining integration of ARMA models with seasonality, we can write a general SARIMA<span class="math">\((p,d,q)\times(P,D,Q)_{12}\)</span> model for nonstationary monthly data, given by <br> <br> [S5] <span class="math">\({\quad\quad\quad}{\phi}(B){\Phi}(B^{12}) \big((1-B)^d(1-B^{12})^D X_n-\mu) = {\psi}(B){\Psi}(B^{12}) \epsilon_n\)</span>, <br> <br> where <span class="math">\(\{\epsilon_n\}\)</span> is a white noise process, the intercept <span class="math">\(\mu\)</span> is the mean of the differenced process <span class="math">\(\{(1-B)^d(1-B^{12})^D X_n\}\)</span>, and we have ARMA polynomials <span class="math">\({\phi}(x)\)</span>, <span class="math">\({\Phi}(x)\)</span>, <span class="math">\({\psi}(x)\)</span>, <span class="math">\({\Psi}(x)\)</span> as in model [S1].</p></li>
+<li><p>Combining integration of ARMA models with seasonality, we can write a general SARIMA<span class="math">\((p,d,q)\times(P,D,Q)_{12}\)</span> model for nonstationary monthly data, given by <br> <br> [S5] <span class="math">\({\quad\quad\quad}{\phi}(B){\Phi}(B^{12}) \big((1-B)^d(1-B^{12})^D X_n-\mu)\)</span><br> <span class="math">\({\quad\quad\quad}\hspace{2in} = {\psi}(B){\Psi}(B^{12}) \epsilon_n\)</span>, <br> <br> where <span class="math">\(\{\epsilon_n\}\)</span> is a white noise process, the intercept <span class="math">\(\mu\)</span> is the mean of the differenced process <span class="math">\(\{(1-B)^d(1-B^{12})^D X_n\}\)</span>, and we have ARMA polynomials <span class="math">\({\phi}(x)\)</span>, <span class="math">\({\Phi}(x)\)</span>, <span class="math">\({\psi}(x)\)</span>, <span class="math">\({\Psi}(x)\)</span> as in model [S1].</p></li>
 <li><p>The SARIMA<span class="math">\((0,1,1)\times(0,1,1)_{12}\)</span> model has often been used for forecasting monthly time series in economics and business. It is sometimes called the <strong>airline model</strong> after a data analysis by Box and Jenkins (1970).</p></li>
 </ul>
 <p><br></p>
@@ -269,7 +269,7 @@ huron_sarma11x10</code></pre>
 <li><p>If, in addition, <span class="math">\(\{\eta_n\}\)</span> is uncorrelated, then we have a <strong>signal plus white noise</strong> model. The usual linear trend regression model fitted by least squares in <a href="http://ionides.github.io/531w16/trend/trend.html#estimating-a-trend-by-least-squares">Section 2.4</a> corresponds to a signal plus white noise model.</p></li>
 <li><p>We can say <strong>signal plus colored noise</strong> if we wish to emphasize that we’re not assuming white noise.</p></li>
 <li><p>Here, <strong>signal</strong> and <strong>trend</strong> are used interchangeably. In other words, we are assuming a deterministic signal.</p></li>
-<li><p>At this point, it is natural for us to consider a signal plus ARMA(p,q) noise model, where <span class="math">\({\eta_n\}\)</span> is a stationary, causal, invertible ARMA(p,q) process with mean zero.</p></li>
+<li><p>At this point, it is natural for us to consider a signal plus ARMA(p,q) noise model, where <span class="math">\(\{\eta_n\}\)</span> is a stationary, causal, invertible ARMA(p,q) process with mean zero.</p></li>
 <li><p>As well as the <span class="math">\(p+q+1\)</span> parameters in the ARMA(p,q) model, there will usually be unknown parameters in the mean function. In this case, we can write <span class="math">\[ \mu_n = \mu_n(\beta)\]</span> where <span class="math">\(\beta\)</span> is a vector of unknown paramters, <span class="math">\(\beta\in{\mathbb{R}}^K\)</span>.</p></li>
 <li><p>We write <span class="math">\(\theta\)</span> for a vector of all the <span class="math">\(p+q+1+K\)</span> parameters, so <span class="math">\[\theta = ({\phi}_{1:p},{\psi}_{1:q},\sigma^2,\beta).\]</span></p></li>
 </ul>
@@ -349,8 +349,8 @@ fit1</code></pre>
 <hr />
 <hr />
 </div>
-<div id="question-what-other-supplementary-analysis-analysis-could-you-do-to-strengthen-your-conclusions" class="section level3">
-<h3><span class="header-section-number">6.4.4</span> Question: What other supplementary analysis analysis could you do to strengthen your conclusions?</h3>
+<div id="question-what-other-supplementary-analysis-could-you-do-to-strengthen-your-conclusions" class="section level3">
+<h3><span class="header-section-number">6.4.4</span> Question: What other supplementary analysis could you do to strengthen your conclusions?</h3>
 <p><br></p>
 <hr />
 <hr />

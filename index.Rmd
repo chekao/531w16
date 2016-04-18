@@ -71,7 +71,34 @@ Any material taken from any source, such as the internet, must be properly ackno
 
 5. [Parameter estimation and model identification for ARMA models](notes5/notes5.html). [(R script)](notes5/notes5.R)
 
-6. [Extending the ARMA model: Seasonality and trend](notes6/notes6.html). [(R script)](notes5/notes5.R)
+6. [Extending the ARMA model: Seasonality and trend](notes6/notes6.html). [(R script)](notes6/notes6.R)
+
+7. [Introduction to the frequency domain](notes7/notes7.html). [(R script)](notes7/notes7.R)
+
+
+8. [Smoothing in the time and frequency domains](notes8/notes8.html). [(R script)](notes8/notes8.R)
+
+9. [Introduction to partially observed Markov process models](notes9/notes9.html). [(R script)](notes9/notes9.R)
+
+10. [Case study: An association between unemployment and mortality?](notes10/notes10.html) [(R script)](notes10/notes10.R)
+
+11. [Statistical methodology for nonlinear partially observed Markov process models](notes11/notes11.html). [(R script)](notes11/notes11.R)
+
+12. [Dynamic models and their simulation by Euler’s method](notes12/notes12.html). [(R script)](notes12/notes12.R)
+
+13. [Practical likelihood-based inference for POMP models](notes13/notes13.html). [(R script)](notes13/notes13.R)
+
+14. [POMP inference: other approaches complementing likelihood-based analysis](notes14/notes14.html). 
+
+15. [Case study: POMP modeling to investigate financial volatility](notes15/notes15.html). [(R script)](notes15/notes15.R)
+
+16. [Using a Linux sever for POMP analysis](linux/linux.html). [Using the UM Flux Linux cluster](flux/flux.html).
+
+17. [Forecasting and fitted values, with a case study of Ebola](notes17/notes17.html). [(R script)](notes17/notes17.R)
+
+18. [Time series models with covariates, and a case study of polio](notes18/notes18.html). [(R script)](notes18/notes18.R)
+
+19. [Concluding remarks](concluding_remarks/concluding_remarks.html)
 
 --------
 
@@ -81,20 +108,59 @@ Any material taken from any source, such as the internet, must be properly ackno
 
 * [Homework 1](hw/hw01.html), due in class on 1/19. [Solution](hw/sol01.html).
 
-* [Homework 2](hw/hw02.html), due in class on 1/26. 
+* [Homework 2](hw/hw02.html), due in class on 1/26. [Solution](hw/sol02.html).
 
-* [Homework 3](hw/hw03.html), due midnight on 2/2. 
+* [Homework 3](hw/hw03.html), due midnight on 2/2. [Solution](hw/sol03.html). See also [Chapter 7.3](http://ionides.github.io/531w16/notes7/notes7.html#some-data-analysis-using-the-frequency-domain).
+
+* [Homework 4](hw/hw04.html), due in class on 2/9. [Solution](hw/sol04.html).
+
+* [Homework 5](hw/hw05.html), due in class on 2/16. [Solution](hw/sol05.html).
+
+* [Homework 6](hw/hw06.html), due in class on 2/23. [Responses](hw/summary06.html).
+
+* [Homework 7](hw/hw07.html), a single slide due midnight on 3/21, for a presentation in class on 3/22 or 3/24.
+
+* [Homework 8](hw/hw08.html), due on 3/29. [Reponses to time survey](hw/summary08.html).
+
+* [Homework 9](hw/hw09.html), due on 4/7.
+
+* [Homework 10](hw/hw10.html), due on 4/14.
+
+
+
 
 ------------
 
 ## Midterm exam information
 
-The midterm exam will involve reasoning about a data analysis using the theoretical and computational techniques we have studied in class. The best predictor of the style of the exam may be the following two past papers from a somewhat similar course:
+* The midterm exam will involve reasoning about a data analysis using the theoretical and computational techniques we have studied in class. 
 
-* [Midterm exam for Stats531 Winter 2009](exam/w09/mt531w09.pdf). [Solutions](exam/w09/mt531w09sol.pdf).
+* The exam may include techniques covered in homeworks 1-5 and will assume familiarity with Chapters 1-10 of the notes. For Chapter 9, you do not need to review algebraic manipulation of state space models beyond what was in homework 5. 
 
-* [Midterm exam for Stats531 Winter 2007](exam/w07/mt531w07.pdf). [Solutions](exam/w07/mt531w07sol.pdf).
+* You should bring to the exam just pens and/or pencils. The exam will be taken without any electronic devices, books or notes.
 
+* The best predictor of the style of the exam may be the following two past papers from a somewhat similar course:
 
+    +  [Midterm exam for Stats531 Winter 2016](exam/w16/mt531w16.pdf). [Solutions](exam/w16/mt531w16sol.pdf).
+
+    +  [Midterm exam for Stats531 Winter 2009](exam/w09/mt531w09.pdf). [Solutions](exam/w09/mt531w09sol.pdf).
+
+    + [Midterm exam for Stats531 Winter 2007](exam/w07/mt531w07.pdf). [Solutions](exam/w07/mt531w07sol.pdf).
+
+## Midterm project
+
+* [Information](midterm_project/midterm_project_info.html)
+
+* [Projects](midterm_project/index.html)
+
+* [Plagiarism and midterm project grades](midterm_project/plagiarism.html)
+
+* [Postscript on plagiarism in the midterm project](midterm_project/postscript_on_plagiarism.html)
+
+## Final project
+
+* [Information](final_project/final_project_info.html)
+
+* [Suggestions for project topics](final_project/project_ideas.html)
 
 ---------
